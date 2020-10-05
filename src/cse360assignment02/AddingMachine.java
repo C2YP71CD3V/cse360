@@ -1,5 +1,17 @@
 package cse360assignment02;
 
+/*
+Name: Joseph Feruglio
+Class: CSE360
+Assignment: Assignment1
+Lecture: Tuesday
+ */
+
+/**
+ * This class defines an adding machine, will perform simple addition and subtraction to a total (starts at 0).
+ * Will also keep track of past operations performed and print it out with toString.
+ *
+ */
 public class AddingMachine {
     private int total; // Declaring private integer
     private String history = "0"; // Initializing private string
@@ -47,7 +59,7 @@ public class AddingMachine {
     }
 
     /**
-     * Clear method to be finished
+     * Resets the "memory" or history and resets total
      */
     public void clear(){
         this.history = "0";
