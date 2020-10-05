@@ -17,7 +17,7 @@ public class AddingMachine {
      * @return value of total
      */
     public int getTotal(){
-        return total;
+        return this.total;
     }
 
     /**
@@ -25,8 +25,8 @@ public class AddingMachine {
      * @param value value to be added
      */
     public void add(int value){
-        total = total + value;
-        history += " + " + value;
+        this.total = total + value;
+        this.history += " + " + value;
     }
 
     /**
@@ -34,8 +34,8 @@ public class AddingMachine {
      * @param value value to be subtracted
      */
     public void subtract (int value){
-        total = total - value;
-        history += " - " + value;
+        this.total = total - value;
+        this.history += " - " + value;
     }
 
     /**
@@ -43,14 +43,15 @@ public class AddingMachine {
      * @return history
      */
     public String toString(){
-        return history;
+        return this.history;
     }
 
     /**
      * Clear method to be finished
      */
     public void clear(){
-        history = "0";
-        total = 0;
+        this.history = "0";
+        this.total = 0;
     }
+
 }
