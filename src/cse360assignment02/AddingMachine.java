@@ -2,6 +2,7 @@ package cse360assignment02;
 
 public class AddingMachine {
     private int total; // Declaring private integer
+    private String history = "0"; // Initializing private string
 
     /**
      * Constructor method for AddingMachine
@@ -16,37 +17,40 @@ public class AddingMachine {
      * @return value of total
      */
     public int getTotal(){
-        return 0;
+        return total;
     }
 
     /**
-     * Add method to be finished
+     * Adds to the total
      * @param value value to be added
      */
     public void add(int value){
-
+        total = total + value;
+        history += " + " + value;
     }
 
     /**
-     * Subtract method to be finished
+     * Subtracts from the total
      * @param value value to be subtracted
      */
     public void subtract (int value){
-
+        total = total - value;
+        history += " - " + value;
     }
 
     /**
-     * toString method to be finished
-     * @return currently returns a blank line
+     * toString of all the past operations
+     * @return history
      */
     public String toString(){
-        return "";
+        return history;
     }
 
     /**
      * Clear method to be finished
      */
     public void clear(){
-
+        history = "0";
+        total = 0;
     }
 }
